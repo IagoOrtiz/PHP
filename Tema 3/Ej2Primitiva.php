@@ -32,13 +32,13 @@
             </tr>
             <tr>
                 <td>Tu Número</td>
-                <td><?php echo $_GET['N1']?></td>
-                <td><?php echo $_GET['N2']?></td>
-                <td><?php echo $_GET['N3']?></td>
-                <td><?php echo $_GET['N4']?></td>
-                <td><?php echo $_GET['N5']?></td>
-                <td><?php echo $_GET['N6']?></td>
-                <td><?php echo $_GET['NS']?></td>
+                <td><?php echo $_REQUEST['N1']?></td>
+                <td><?php echo $_REQUEST['N2']?></td>
+                <td><?php echo $_REQUEST['N3']?></td>
+                <td><?php echo $_REQUEST['N4']?></td>
+                <td><?php echo $_REQUEST['N5']?></td>
+                <td><?php echo $_REQUEST['N6']?></td>
+                <td><?php echo $_REQUEST['NS']?></td>
             </tr>
             <tr>
                 <td>Ganador</td>
