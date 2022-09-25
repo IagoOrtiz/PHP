@@ -18,7 +18,7 @@
     }
 </style>
 <body>
-    <img src=<?php echo "../Images/".$_REQUEST['banner'].".jpg"?> height="300px"><br>
+    <img src=<?php echo "Images/".$_REQUEST['banner'].".jpg"?> height="300px"><br>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea delectus iste nulla dignissimos autem quibusdam
     recusandae doloribus, temporibus illo voluptas! Officiis est provident exercitationem corporis veniam placeat deserunt, 
     molestiae laudantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nobis, beatae, perferendis amet 
