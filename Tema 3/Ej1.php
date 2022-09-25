@@ -8,8 +8,8 @@
 </head>
 <body>
     <form action="Ej1Cilindro.php">
-        <input type="number" name="Altura">  Altura<br><br>
-        <input type="number" name="Diametro">  Diametro<br><br>
+        <input type="number" name="Altura" required>  Altura<br><br>
+        <input type="number" name="Diametro" required>  Diametro<br><br>
         <input type="submit" value="Enviar">
     </form>
 </body>
