@@ -9,7 +9,6 @@
 </head>
     <?php
         if (isset($_REQUEST['num'])) {
-            $num = $_REQUEST['num'];
             header("refresh: 2; url=Ej1.php");
         }
     ?>
@@ -24,7 +23,7 @@
                     for ($j=0; $j < 3; $j++) {
                         $cont++; 
                         echo '<td><a href="Ej1.php?num='.$cont.'"><img src=';
-                        if (isset($num) && $num == $cont) {
+                        if (isset($_REQUEST['num']) && $_REQUEST['num'] == $cont) {
                             echo '"Images/'.$cont.'.jpg"';
                         } else {
                             echo '"Images/oculto.jpg"';
