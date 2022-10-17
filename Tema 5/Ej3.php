@@ -17,8 +17,7 @@
     tbody, tr, td {
         padding: 0px;
         line-height: 0px;
-    }
-        
+    }  
 </style>
 <body>
     <h1>Descubre la imagen oculta</h1>
@@ -32,7 +31,7 @@
                 $arr = explode(",",$_REQUEST['arrenv']);
                 if (in_array($num, $arr)) {
                     unset($arr[array_search($num, $arr)]);
-                } else if (count($arr)<=7) {
+                } else if (count($arr)<=10) {
                     $arr[] = $num;
                 } else {
                     header("location: Ej3Fallo.php");
