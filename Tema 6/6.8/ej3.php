@@ -16,11 +16,12 @@
             $string = trim($_REQUEST['text']);
             $string = explode(" ",$string);
 
-            foreach ($string as $c) {
-                if ($c == "") {
-                    unset($c);
+            for ($i=count($string)-1; $i >= 0; $i--) { 
+                if ($string[$i] == "") {
+                    unset($string[$i]);
                 }
             }
+
             echo "La frase tiene ".count($string)." palabras";
         }
     ?>

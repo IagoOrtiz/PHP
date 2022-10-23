@@ -15,6 +15,7 @@
         if (isset($_REQUEST['text'])) {
             $string = trim($_REQUEST['text']);
             $string = explode(" ",$string);
+            
             if ($string[0] == $string[count($string)-1]) {
                 echo "La frase comienza y termina con la misma palabra";
             } else {
