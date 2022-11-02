@@ -30,6 +30,12 @@
         border: 1px solid black;
     }
 
+    a {
+        border: none;
+        color: black;
+        text-decoration: none;
+    }
+
     td {
         border: none;
     }
@@ -43,7 +49,9 @@
             } else {
                 $palet = array();
             }
-            $palet[] = $bg;
+            if (isset($_POST['bg'])) {
+                $palet[] = $bg;
+            }
             setcookie("palet", serialize($palet), time() + 60*60*24*30);
         }
     } else if (isset($_COOKIE['bg'])) {
@@ -65,7 +73,6 @@
     foreach ($palet as $i => $color) {
         echo ".d$i {\n background-color: $color; \n}\n";
     }
-
 
 ?>
 
@@ -92,7 +99,7 @@
                         ?>
                         <tr>
                             <td>
-                                <div class="d<?=$i?>"><?=$i+1?></div>
+                                <div class="d<?=$i?>"><a href="ej1.php?bg=<?=$color?>">Color <?=$i+1?></a></div>
                             </td>
                         </tr>
                         <?php
