@@ -21,7 +21,7 @@
     </form><br>
     <?php
         if (isset($_REQUEST['dia'])) {
-            echo date ("d \d\\e\l m", strtotime("next ".$_REQUEST['dia']));
+            echo date ("\E\l \p\\r\o\x\i\m\o l \\e\s \\e\l d \d\\e\l m", strtotime("next ".$_REQUEST['dia']));
         }
     ?>
 </body>

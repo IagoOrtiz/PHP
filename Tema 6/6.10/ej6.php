@@ -15,7 +15,7 @@
     </form><br>
     <?php
         if (isset($_REQUEST['años'])) {
-            echo date ("d \d\\e\l m \d\\e Y", strtotime("+".$_REQUEST['años']." years ".$_REQUEST['meses']." months ".$_REQUEST['dias']." days"));
+            echo date ("d \d\\e\l m \d\\e Y. l", strtotime("+".$_REQUEST['años']." years ".$_REQUEST['meses']." months ".$_REQUEST['dias']." days"));
         }
     ?>
 </body>

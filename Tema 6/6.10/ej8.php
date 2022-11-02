@@ -21,7 +21,7 @@
             $p2 = array($_REQUEST['n2'], floor((time() - strtotime($_REQUEST['p2']))/(60*60*24*365.25)));
             echo $p1[0].", ".$p1[1]." años.<br>";
             echo $p2[0].", ".$p2[1]." años.<br>";
-            if ($p1[1] > $p2[1]) {
+            if (strtotime($_REQUEST['p1']) > strtotime($_REQUEST['p2'])) {
                 echo "El mayor es ".$p1[0];
             } else {
                 echo "El mayor es ".$p2[0];
