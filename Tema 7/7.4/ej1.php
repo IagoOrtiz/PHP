@@ -43,19 +43,20 @@
     if (isset($_REQUEST['bg'])) {
         $bg = $_REQUEST['bg'];
         setcookie("bg", $bg, time() + 60*60*24*30);
-        if (!isset($_REQUEST['clear'])) {
-            if (isset($_COOKIE['palet'])) {
-                $palet = unserialize(($_COOKIE['palet']));
-            } else {
-                $palet = array();
-            }
-            if (isset($_POST['bg'])) {
-                $palet[] = $bg;
-            }
-            setcookie("palet", serialize($palet), time() + 60*60*24*30);
-        }
     } else if (isset($_COOKIE['bg'])) {
         $bg = $_COOKIE['bg'];
+    }
+
+    if (!isset($_REQUEST['clear'])) {
+        if (isset($_COOKIE['palet'])) {
+            $palet = unserialize(($_COOKIE['palet']));
+        } else {
+            $palet = array();
+        }
+        if (isset($_POST['bg'])) {
+            $palet[] = $bg;
+        }
+        setcookie("palet", serialize($palet), time() + 60*60*24*30);
     }
 
     if (isset($_REQUEST['clear'])) {
