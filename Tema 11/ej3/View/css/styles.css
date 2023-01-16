@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: lightcoral;
+    margin: 20px;
+}
+
+.cesta {
+    float: right;
+    text-align: center;
+}
+
+.cesta td {
+    height: 150px;
+    width: 12vw;
+    padding: 5px;
+}
+th, tr, td {
+    border: 1px solid black;
+}
+
+.productos td {
+    height: 150px;
+    width: 200px;
+    text-align: center;
+}
+
+img {
+    height: 80%;
+}
+
+.stock {
+    margin: 10px auto;
+    border: 1px solid black;
+    box-shadow: 0 0 5px darkgray;
+    width: 500px;
+    height: 130px;
+    text-align: center;
+}

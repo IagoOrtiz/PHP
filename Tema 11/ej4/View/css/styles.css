@@ -1,0 +1,50 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: rgb(70, 101, 124);
+}
+
+table, .alumno {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 30px auto;
+    box-shadow: 3px 3px 5px rgb(38, 57, 80);
+    background-color: white;
+}
+
+table * {
+    padding: 2px;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+.alumno {
+    width: 30vw;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.alumno ul {
+    text-align: left;
+    padding-left: 42%;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+
+.asignaturas {
+    background-color: darkgray;
+}
+
+.titulo {
+    font-size: 1.5em;
+    padding: 10px;
+}

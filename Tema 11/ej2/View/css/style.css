@@ -1,0 +1,19 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+textarea {
+    resize: none;
+    width: 500px;
+    height: 300px;
+}
+
+.titulo {
+    width: 500px;
+}
+
+div {
+    width: 1200px;
+    border: 1px solid black;
+    padding: 0 15px 15px 15px;
+}

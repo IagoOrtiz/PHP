@@ -1,0 +1,22 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 1000px;
+    margin: 10px auto;
+    padding: 100px;
+    text-align: center;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 5px auto;
+}
+
+table * {
+    border: 1px solid black;
+}
